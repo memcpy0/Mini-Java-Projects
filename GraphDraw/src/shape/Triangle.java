@@ -1,0 +1,19 @@
+package shape;
+
+public class Triangle extends Graph {
+	public Triangle(int gIdx, int gShape, String gName) {
+		super(gIdx, gShape, gName);
+	}
+	
+	public void paint() {
+		System.out.println(this);
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append(String.valueOf(getIdx()) + " ");
+		sb.append("Triangle " + getName());
+		return sb.toString();
+	}
+}
